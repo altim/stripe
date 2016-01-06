@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,400italic|Raleway:400,300,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link type="text/css" media="screen" href="normalize.css" rel="stylesheet">
+	<link type="text/css" media="screen" href="style.css" rel="stylesheet">
+
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+	<script type="text/javascript">
+		Stripe.setPublishableKey('pk_test_6e5L6BeeBUPz6tUvwTjcnGsP');
+	</script>
+
+	<title>Mechanics Ville Ltd.</title>
+</head>
+<body id="top" class="animate home">
+
+	<div class="site-container">
+
+		<div class="header-wrapper" id="header-wrapper">
+			<header class="cf">
+				<a class="logo scroll" href="#top">
+					<img src="imgs/logo.png" alt="Mechanics Ville Ltd. logo">
+				</a>
+				<a class="mobileToggle" href="#"></a>
+				<nav>
+					<ul id="nav">
+						<li><a href="#top" class="scroll spy active">Home</a></li>
+						<li><a href="#about" class="scroll spy">About</a></li>
+						<li><a href="#purchase" class="scroll spy">Purchase</a></li>
+						<li><a href="#who" class="scroll spy">Who</a></li>
+						<li><a href="#how" class="scroll spy">How</a></li>
+						<li><a href="#faq" class="scroll spy">FAQ's</a></li>
+						<li><a href="#contact" class="scroll ">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+		<section class="banner">
+			<div class="wc">
+				<img src="imgs/cdn-icon.png">
+				<h1>Spark Free<span>Jumper Cables</span></h1>
+				<h2>The Safest Clamps in the Industry and Safety Always Comes First</h2>
+				<a class="btn btnBanner scroll" href="#about">Learn more</a>
+			</div>
+		</section>
+
+		<section class="video" id="video">
+			<div class="wc cf ">
+				<div class="video-width-restrictor">
+					<div class="iframe-container">
+						<div class="video-screenshot" id="video-screenshot"></div>
+						<div id="player"></div>
+						<script>
+						    var tag = document.createElement('script');
+						    tag.src = "https://www.youtube.com/iframe_api";
+						    var firstScriptTag = document.getElementsByTagName('script')[0];
+						    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+						    var player;
+						    function onYouTubeIframeAPIReady() {
+						        player = new YT.Player('player', {
+							          height: '390',
+							          width: '640',
+							          videoId: 'Mpxa02gvAhg',
+							          playerVars: {
+								          listType:'playlist',
+								          list: 'PLXyRdEHtfKHTftp-9vsMzSSMjtyVDOs8b'
+								        },
+						        });
+						    }
+					    </script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="wc cf ">
+				<img class="about-img" src="imgs/boosters.jpg" alt="booster cables">
+				<p>Spark Free Jumper cables (Booster Cables) are poised to disrupt an industry long known for its unsafe practices. Like everyone we became frustrated by a product that doesn’t work safely and in most cases properly. We then set out to change it with jumper cables that are safer, smarter and faster then any other jumper cables currently in the market.</p>
+				<p><i>Our core mission</i> is to become the industry's leading global supplier of jumper cables, one market at a time. </p>
+				<ul class="checkmark-list">
+					<li>Worry free jump starting thats safer and easier then competing products</li>
+					<li>Perfect for people with little to no experience jump starting their vehicle</li>
+					<li>Safely hold clamps in one hand even while connected to a live battery</li>
+					<li>Protective PVC barrier that protects you from exposed copper</li>
+					<li id="purchase">Durable 16 foot medium duty 6 gauge cables with travel case included</li>
+					<li>All shipping will be determined as a flat rate based on your location in Canada or USA</li>
+				</ul>
+				<div class="purchase-box">
+					<form>
+						<h2>Purchase Yours Today</h2>
+						<p class="tagline">The Original Spark-Free Solution</p>
+						<input id="quantity" type="text" value="1">
+						<p class="price">$24.99<span>CDN Per Unit + Tx</span></p>
+						<input class="open-checkout" type="submit" value="Purchase Now">
+					</form>
+
+					<img src="imgs/credit-cards.jpg" alt="accepted credit cards">
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonials" id="who">
+			<ul class="testimonial-slider">
+				<li>
+					<div class="wc">
+						<p>"I feel better knowing my wife has them..."</p>
+						<p class="who">Tracey Wilson</p>
+					</div>
+				</li>
+				<li>
+					<div class="wc">
+						<p>"I was always scared to boost my car but now I won't be..."</p>
+						<p class="who">Tracey Wilson</p>
+					</div>
+				</li>
+				<li>
+					<div class="wc">
+						<p>"I can't believe these haven't been invented yet..."</p>
+						<p class="who">Scott Beauchamps</p>
+					</div>
+				</li>
+				<li>
+					<div class="wc">
+						<p>"For the same price as traditional cables,  why would anyone any use anything else..."</p>
+						<p class="who">Errin Sykes</p>
+					</div>
+				</li>
+				<li>
+					<div class="wc">
+						<p>"I could've used these years ago when I fried my car's electrical system..."</p>
+						<p class="who">Nour Vachon</p>
+					</div>
+				</li>
+				<li>
+					<div class="wc">
+						<p>"Why take a chance with the other cables out there?"</p>
+						<p class="who">William Baez</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="how" id="how">
+			<div class="wc cf">
+				<div class="how-box cf">
+					<div class="img-container">
+						<img src="imgs/diagram-1.jpg">
+					</div>
+					<div class="how-content">
+						<div class="vertical-center">
+							<h2>Were all about Safety through&nbsp;Design</h2>
+							<p>Spark Free jumper cables are all about safety, design and improvement and we nailed it. With a sleek design and safety first approach we’ve created the worlds first jumper cables with a protective barrier specifically designed to keep you safe. </p>
+						</div>
+					</div>
+				</div>
+				<div class="how-box reverse cf ">
+					<div class="img-container">
+						<img src="imgs/diagram-2.jpg">
+					</div>
+					<div class="how-content">
+						<div class="vertical-center">
+							<h2>The Overbite Thats Safer</h2>
+							<p>By adding additional PVC (polyvinyl chloride), raising it on the sides/front of the clamp and reducing the top portion of the copper teeth by a few millimetres, we’ve created an unique “overbite” design that eliminates all contact points.</p>
+						</div>
+					</div>
+				</div>
+				<div class="how-box cf">
+					<div class="img-container">
+						<img src="imgs/diagram-3.jpg">
+					</div>
+					<div class="how-content">
+						<div class="vertical-center">
+							<h2>Global Patent Pending Design</h2>
+							<p>Thanks to our global patent pending design, Spark Free jupmer cables won't spark and ensure safe power transfer.  Best part is, Spark Free jumper cables protective barrier limits corrosion leaving you with longer lasting cables.</p>
+						</div>
+					</div>
+				</div>
+				<div class="how-box reverse cf">
+					<div class="img-container">
+						<img src="imgs/diagram-4.jpg">
+					</div>
+					<div class="how-content">
+						<div class="vertical-center">
+							<h2>Where Traditional Jumper Cables Fall Short</h2>
+							<p>Traditional cables have notoriously been known to throw safety out the window.  With exposed metal that corrodes easily and exposed teeth comes the increased chance of shock and electrocution.  Traditional jumper cables have been in need of a safety and design overhaul since their original inception. Thats where we come in.... </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq" id="faq">
+			<div class="wc cf">
+				<h1>Frequently Asked Questions That Will help you Along</h1>
+				<div class="faq-box">
+					<div class="faq-item">
+						<p><span>Can I return the product?</span> We have a no nonsense return policy.  If for any reason you are unhappy with our product, please email us within 30 days and we will gladly refund your purchase minus the shipping charges.</p>
+					</div>
+					<div class="faq-item">
+						<p><span>Who is your shipping partner?</span> We rely on Canada Post shipping as our sole partner.  From experience we found shipping with Canada Post couldn’t be simpler or more reliable.</p>
+					</div>
+					<div class="faq-item">
+						<p><span>What is the cost of shipping?</span> Our fee is $10 cdn in Ontario and $15 cdn anywhere else in Canada for 1 or multiple cables. Shipping to US is $31 cdn. We've made shipping costs simple.</p>
+					</div>
+					<div class="faq-item">
+						<p><span>Will you supply a tracking number?</span> Simple answer. Yes. Post checkout and payment, you will be given a unique tracking code.  From there, you can track your order all the way to your front door.</p>
+					</div>
+					<div class="faq-item">
+						<p><span>Do you sell outside of North America?</span> Absolutely. Feel free to contact us directly with costs associated for shipping outside of North America.</p>
+					</div>
+					<div class="faq-item">
+						<p><span>Does is come with a travel case?</span> Yes. Every order of Spark Free cables come handy easy to carry carrying case that helps keep your cables clean.</p>
+					</div>
+					<div class="faq-item">
+						<p><span>Can we buy in bulk and resell?</span> Great, question and something we get asked all the time. If you are a retailer, buyer, reseller, distributor or online vendor please contact us directly for wholesale prices.</p>
+					</div>
+					<div class="faq-item">
+						<p><span>Contact</span> MechanicsVille LTD is a company that was co-founded by two ambitious and driven founders in Toky Ranaivoson and Chris Barry.  Having found a serious safety flaw to an existing product (jumper cables), Toky and Chris coupled with their imagination and hard work set out to find the solution. With all the cards stacked against them in an industry where 90% of products never to make it to market, Toky and Chris went from concept, to prototype and finally to market and are now proud to offer their Spark Free jumper cables to you. </p>
+					</div>
+				</div>
+				<div class="find">
+					<p>Find what you're looking for? If not <a href="mailto:sales@spark-free.com">Contact Us</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="newsletter">
+			<div class="wc cf">
+				<h1> Join Our Mailing List</h1>
+				<form target="_blank" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="//spark-free.us12.list-manage.com/subscribe/post?u=65a3e3863fbed5bc6b5bb4425&amp;id=0bd7806659">
+					<input type="text" id="mce-EMAIL" name="EMAIL" value="" placeholder="Add your full email address here">
+			    	<input type="submit" class="submit" id="mc-embedded-subscribe" name="subscribe" value="Send Now">
+				</form>
+			</div>
+		</section>
+
+		<footer id="contact">
+			<div class="wc cf">
+				<img class="footer-logo" src="imgs/logo.png" alt="mechanics ville logo">
+				<div class="contact-col">
+					<h4>Contact Information</h4>
+					<p>Ottawa, Ontario<br>
+					Edmonton, Alberta<br>
+					Email: <a href="sales@spark-free.com">sales@spark-free.com</a></p>
+				</div>
+				<div class="links-col">
+					<h4>Useful Links</h4>
+					<ul>
+						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="terms-of-service.html">Terms of Service</a></li>
+						<li><a href="return-policy.html">Return Policy</a></li>
+					</ul>
+				</div>
+				<div class="twitter-col">
+					<h4>Twitter Block</h4>
+					<div id="twitterfeed">
+					</div>
+				</div>
+				<div class="instagram-col">
+					<h4>Instagram Follow</h4>
+					<div id="instafeed"></div>
+				</div>
+				<div class="copyright-bar">
+					<p class="copyright-text">&copy; Rights Reserved - Mechanics Ville Ltd. | Powered by <a href="http://strongvine.com">Strongvine</a></p>
+					<p class="flags"><img src="imgs/can-flag.png" alt="canadian flag"><img src="imgs/mag-flag.png" alt="Madagascar Flag"></p>
+					<ul class="footer-menu">
+						<li><a href="#top" class="scroll">Home</a></li>
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#purchase" class="scroll">Purchase</a></li>
+						<li><a href="#who" class="scroll">Who</a></li>
+						<li><a href="#how" class="scroll">How</a></li>
+						<li><a href="#faq" class="scroll">FAQ's</a></li>
+						<li><a href="#contact" class="scroll ">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<form action="stripe.php" method="POST" id="payment-form">
+
+		<div class="checkout-form">
+			<div class="purchase-screen is-active" id="contact-info">
+				<div class="horizontal-center">
+					<h1>Who are you?</h1>
+
+					<div class="ps-container cf">
+						<h2>Contact Information</h2>
+						<input data-stripe="name" type="text" class="card-holder-name required" placeholder="FULL NAME">
+						<input data-stripe="email" type="text" name="email_address" class="card-holder-email required" placeholder="EMAIL ADDRESS">
+						<input data-stripe="phone" type="text" class="card-holder-phone required" placeholder="PHONE NUMBER">
+						<a class="prev-screen" href="#">Go Back</a>
+						<a class="next-screen" href="#">Next Step</a>
+						<img class="cc-img" alt="accepted credit cards" src="imgs/credit-cards.jpg">
+						<img class="ssl-img" alt="accepted credit cards" src="imgs/ssl.png">
+					</div>
+				</div>
+			</div>
+			<div class="purchase-screen" id="billing">
+				<div class="horizontal-center">
+					<h1>Almost Done</h1>
+
+					<div class="ps-container cf">
+						<h2>Your Billing Address</h2>
+						<input data-stripe="address_line1" type="text" class="card-holder-address required" placeholder="STREET ADDRESS">
+						<input data-stripe="address_line2" type="text" class="card-holder-address2" placeholder="SUITE / UNIT / BOX #">
+						<input data-stripe="city" type="text" class="card-holder-city required" placeholder="CITY">
+						<input data-stripe="address_zip" type="text" class="card-holder-zip required" placeholder="POSTAL / ZIP CODE">
+						<select data-stripe="address_country" class="card-holder-country required" id="billing_country">
+							<option value="CANADA">Canada</option>
+							<option value="US">United States</option>
+						</select>
+						<select data-stripe="address_state" class="card-holder-state required billing_province_state canada_billing_province_state">
+							<option value="AB">Alberta</option>
+							<option value="BC">British Columbia</option>
+							<option value="MB">Manitoba</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland and Labrador</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NU">Nunavut</option>
+							<option value="ON">Ontario</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="QC">Quebec</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="YT">Yukon</option>
+						</select>
+
+						<select data-stripe="address_state" class="card-holder-state required billing_province_state us_billing_province_state">
+							<option value="AL">Alabama</option>
+							<option value="AK">Alaska</option>
+							<option value="AZ">Arizona</option>
+							<option value="AR">Arkansas</option>
+							<option value="CA">California</option>
+							<option value="CO">Colorado</option>
+							<option value="CT">Connecticut</option>
+							<option value="DE">Delaware</option>
+							<option value="DC">District Of Columbia</option>
+							<option value="FL">Florida</option>
+							<option value="GA">Georgia</option>
+							<option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option>
+							<option value="IL">Illinois</option>
+							<option value="IN">Indiana</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+							<option value="LA">Louisiana</option>
+							<option value="ME">Maine</option>
+							<option value="MD">Maryland</option>
+							<option value="MA">Massachusetts</option>
+							<option value="MI">Michigan</option>
+							<option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option>
+							<option value="MO">Missouri</option>
+							<option value="MT">Montana</option>
+							<option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option>
+							<option value="NH">New Hampshire</option>
+							<option value="NJ">New Jersey</option>
+							<option value="NM">New Mexico</option>
+							<option value="NY">New York</option>
+							<option value="NC">North Carolina</option>
+							<option value="ND">North Dakota</option>
+							<option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option>
+							<option value="OR">Oregon</option>
+							<option value="PA">Pennsylvania</option>
+							<option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option>
+							<option value="SD">South Dakota</option>
+							<option value="TN">Tennessee</option>
+							<option value="TX">Texas</option>
+							<option value="UT">Utah</option>
+							<option value="VT">Vermont</option>
+							<option value="VA">Virginia</option>
+							<option value="WA">Washington</option>
+							<option value="WV">West Virginia</option>
+							<option value="WI">Wisconsin</option>
+							<option value="WY">Wyoming</option>
+					</select>
+						<a class="prev-screen" href="#">Go Back</a>
+						<a class="next-screen" href="#">Next Step</a>
+						<img class="cc-img" alt="accepted credit cards" src="imgs/credit-cards.jpg">
+						<img class="ssl-img" alt="accepted credit cards" src="imgs/ssl.png">
+					</div>
+				</div>
+			</div>
+			<div class="purchase-screen" id="shipping">
+				<div class="horizontal-center">
+					<h1>Getting Closer</h1>
+
+					<div class="ps-container cf">
+						<h2>Your Shipping Address</h2>
+
+						<div class="duplicate-shipping is-duplicated">
+							<p>Same as Billing Address</p>
+						</div>
+						<input data-stripe="shipping_full_name" name="shipping_full_name" class="required shipping_full_name" type="text" placeholder="FULL NAME">
+						<input data-stripe="shipping_street_address" name="shipping_street_address" class="required shipping_street_address" type="text" placeholder="STREET ADDRESS">
+						<input data-stripe="shipping_street_address2" name="shipping_street_address2" class="shipping_street_address2" type="text" placeholder="SUITE / UNIT / BOX #">
+						<input data-stripe="shipping_city" name="shipping_city" type="text" class="required shipping_city" placeholder="City">
+						<input data-stripe="shipping_zip_code" type="text" name="shipping_zip_code" class="required shipping_zip_code" placeholder="POSTAL / ZIP CODE">
+						<select data-stripe="shipping_country" id="shipping_country" class="required shipping_country" name="shipping_country">
+							<option value="CANADA">Canada</option>
+							<option value="US">United States</option>
+						</select>
+						<select data-stripe="shipping_province_state" class="required shipping_province_state canada_shipping_province_state" name="shipping_province_state">
+							<option value="AB">Alberta</option>
+							<option value="BC">British Columbia</option>
+							<option value="MB">Manitoba</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland and Labrador</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NU">Nunavut</option>
+							<option value="ON">Ontario</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="QC">Quebec</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="YT">Yukon</option>
+						</select>
+
+						<select data-stripe="shipping_province_state" class="required  shipping_province_state us_shipping_province_state" name="shipping_province_state" disabled="disabled">
+							<option value="AL">Alabama</option>
+							<option value="AK">Alaska</option>
+							<option value="AZ">Arizona</option>
+							<option value="AR">Arkansas</option>
+							<option value="CA">California</option>
+							<option value="CO">Colorado</option>
+							<option value="CT">Connecticut</option>
+							<option value="DE">Delaware</option>
+							<option value="DC">District Of Columbia</option>
+							<option value="FL">Florida</option>
+							<option value="GA">Georgia</option>
+							<option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option>
+							<option value="IL">Illinois</option>
+							<option value="IN">Indiana</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+							<option value="LA">Louisiana</option>
+							<option value="ME">Maine</option>
+							<option value="MD">Maryland</option>
+							<option value="MA">Massachusetts</option>
+							<option value="MI">Michigan</option>
+							<option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option>
+							<option value="MO">Missouri</option>
+							<option value="MT">Montana</option>
+							<option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option>
+							<option value="NH">New Hampshire</option>
+							<option value="NJ">New Jersey</option>
+							<option value="NM">New Mexico</option>
+							<option value="NY">New York</option>
+							<option value="NC">North Carolina</option>
+							<option value="ND">North Dakota</option>
+							<option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option>
+							<option value="OR">Oregon</option>
+							<option value="PA">Pennsylvania</option>
+							<option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option>
+							<option value="SD">South Dakota</option>
+							<option value="TN">Tennessee</option>
+							<option value="TX">Texas</option>
+							<option value="UT">Utah</option>
+							<option value="VT">Vermont</option>
+							<option value="VA">Virginia</option>
+							<option value="WA">Washington</option>
+							<option value="WV">West Virginia</option>
+							<option value="WI">Wisconsin</option>
+							<option value="WY">Wyoming</option>
+						</select>
+						<a class="prev-screen" href="#">Go Back</a>
+						<a class="next-screen" href="#">Next Step</a>
+						<img class="cc-img" alt="accepted credit cards" src="imgs/credit-cards.jpg">
+						<img class="ssl-img" alt="accepted credit cards" src="imgs/ssl.png">
+					</div>
+				</div>
+			</div>
+			<div class="purchase-screen" id="card-info">
+				<div class="horizontal-center">
+					<h1>Last Step</h1>
+
+					<div class="ps-container cf">
+						<h2>Credit Card Information</h2>
+						<input data-stripe="number" class="card-number" type="text" placeholder="CARD NUMBER">
+						<input data-stripe="cvc" class="card-cvc" type="text" placeholder="CVC NUMBER" maxlength="3">
+						<input data-stripe="exp-month" class="card-expiry-month" type="text" placeholder="EXPIRY MONTH" maxlength="2">
+						<input data-stripe="exp-year" class="card-expiry-year" type="text" placeholder="EXPIRY YEAR" maxlength="2">
+						<div class="cart cf">
+							<div class="cart-row">
+								<div class="amount-operator"></div>
+								<div class="amount"><div class="amount-number cart-quantity">1</div> <span>Quantity</span></div>
+							</div>
+							<div class="cart-row">
+								<div class="amount-operator"></div>
+								<div class="amount"><div class="amount-number cart-price">$29.99</div> <span>Sub Total</span></div>
+							</div>
+							<div class="cart-row">
+								<div class="amount-operator">+</div>
+								<div class="amount"><div class="amount-number cart-shipping-tax">$10.00</div> <span>Flat Shipping</span></div>
+							</div>
+							<div class="cart-row">
+								<div class="amount-operator">+</div>
+								<div class="amount"><div class="amount-number cart-tax">$5.20</div> <span>Tax</span></div>
+							</div>
+							<div class="cart-row">
+								<div class="amount-operator"></div>
+								<div class="amount total"><div class="amount-number cart-total-amount">$45.19</div> <span>Total</span></div>
+							</div>
+
+							<input type="hidden" name="total_quantity" id="total_quantity" value="1" />
+							<input type="hidden" name="total_amount" id="total_amount" value="2990" />
+							<input type="hidden" name="total_shipping" id="total_shipping" value="0" />
+							<input type="hidden" name="total_tax" id="total_tax" value="0" />
+						</div>
+						<p class="payment-error">We're sorry but the card you have entered is invalid.</p>
+						<a class="prev-screen" href="#">Go Back</a>
+						<!--<a class="next-screen loading" href="#">Pay Now</a>-->
+						<!--<button type="submit" class="next-screen loading" href="#">Pay Now</button>-->
+						<button type="submit" class="pay-now" >Pay Now</button>
+						<img class="cc-img" alt="accepted credit cards" src="imgs/credit-cards.jpg">
+						<img class="ssl-img" alt="accepted credit cards" src="imgs/ssl.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="purchase-screen" id="transaction-complete">
+				<div class="horizontal-center">
+					<div class="transaction-success-icon">
+						<span class="checkmark-line-one"></span>
+						<span class="checkmark-line-two"></span>
+					</div>
+					<div class="ps-container cf">
+						<h2>Order Completed</h2>
+
+						<p>Thank you for your order. Your purchase details and shipping information will be sent to you
+							via email. Please check your Spam folder or contact us if you have any problems.</p>
+						<a class="close-checkout" href="#">Back to Site</a>
+						<img class="cc-img" alt="accepted credit cards" src="imgs/credit-cards.jpg">
+						<img class="ssl-img" alt="accepted credit cards" src="imgs/ssl.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/instagram.js"></script>
+	<script type="text/javascript" src="js/twitterFetcher_min.js"></script>
+	<!--[if IE 9]>  
+	<script type="text/javascript" src="js/placeholders.jquery.min.js"></script>
+	<![endif]--> 
+	<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
